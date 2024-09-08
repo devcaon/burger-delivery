@@ -1,5 +1,10 @@
 import Link from "next/link";
 import React from "react";
+import { BiMenu } from "react-icons/bi";
+import { BsShop } from "react-icons/bs";
+import { FaCartShopping, FaMicroblog } from "react-icons/fa6";
+import { GrContact, GrOrderedList } from "react-icons/gr";
+import { HiHome } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
 
 interface Props {
@@ -23,20 +28,33 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       >
         {/* nav links */}
         <ul className="space-y-10">
-          <li className="text-[28px] hover:text-red-700">
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <HiHome className="w-6 h-6" />
             <Link href="/">Home</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700">
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <BsShop className="w-6 h-6" />
             <Link href="/">Shop</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700">
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <BiMenu className="w-6 h-6" />
             <Link href="/">Menu</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700">
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <FaMicroblog className="w-6 h-6" />
             <Link href="/">Blog</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700">
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <GrContact className="w-6 h-6" />
             <Link href="/">Contact</Link>
+          </li>
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <GrOrderedList className="w-6 h-6" />
+            <Link href="/">Order By</Link>
+          </li>
+          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+            <FaCartShopping className="w-6 h-6" />
+            <Link href="/">My Cart</Link>
           </li>
         </ul>
       </div>
