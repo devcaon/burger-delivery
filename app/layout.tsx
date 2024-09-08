@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed } from "next/font/google";
 import "./globals.css";
+import ResponsiveNav from "./components/Navigation/ResponsiveNav";
 
 const barlow_Condensed = Barlow_Condensed({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={barlow_Condensed.className}>{children}</body>
+      <body className={barlow_Condensed.className}>
+        <ResponsiveNav />
+        {children}
+      </body>
     </html>
   );
 }
