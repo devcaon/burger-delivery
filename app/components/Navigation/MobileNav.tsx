@@ -26,8 +26,11 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       <div
         className={`bg-white ${navStyle} overflow-y-scroll [&::-webkit-scrollbar]:hidden  text-black transition-all duration-500 flex flex-col items-left justify-start p-6 w-[70%] h-[100%]`}
       >
+        <div className="w-full text-2xl text-gray-800 mb-6 font-semibold">
+          MENU
+        </div>
         {/* nav links */}
-        <ul className="space-y-10">
+        <ul className="space-y-4">
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <HiHome className="w-6 h-6" />
             <Link href="/">Home</Link>
