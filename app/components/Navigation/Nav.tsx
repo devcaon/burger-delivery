@@ -10,7 +10,7 @@ interface Props {
 
 const Nav = ({ openNav }: Props) => {
   return (
-    <div className="h-[12vh] py-2 bg-white">
+    <div className="h-[80px] p-2 bg-white">
       <div className="sm:w-[90%] w-[95%] h-[100%] mx-auto flex items-center justify-between">
         {/* logo */}
         <div className="flex items-center space-x-2">
@@ -54,7 +54,7 @@ const Nav = ({ openNav }: Props) => {
           </div>
           <HiMenuAlt2
             onClick={openNav}
-            className="lg:hidden w-[3rem] h-[3rem] text-black hover:bg-gray-100 rounded-lg"
+            className="lg:hidden w-[2rem] h-[2rem] text-black hover:bg-gray-100 rounded-lg"
           />
         </div>
       </div>

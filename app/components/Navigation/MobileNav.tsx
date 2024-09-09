@@ -24,35 +24,38 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
       />
       {/* nav div */}
       <div
-        className={`bg-white ${navStyle} text-black transition-all duration-500 flex flex-col items-left justify-start p-6 w-[70%] h-[100%]`}
+        className={`bg-white ${navStyle} overflow-y-scroll [&::-webkit-scrollbar]:hidden  text-black transition-all duration-500 flex flex-col items-left justify-start p-6 w-[70%] h-[100%]`}
       >
         {/* nav links */}
         <ul className="space-y-10">
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <HiHome className="w-6 h-6" />
             <Link href="/">Home</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <BsShop className="w-6 h-6" />
             <Link href="/">Shop</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <BiMenu className="w-6 h-6" />
             <Link href="/">Menu</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <FaMicroblog className="w-6 h-6" />
             <Link href="/">Blog</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <GrContact className="w-6 h-6" />
             <Link href="/">Contact</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li>
+            <div className="border border-b-[0.5px] border-b-gray-300/30" />
+          </li>
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <GrOrderedList className="w-6 h-6" />
             <Link href="/">Order By</Link>
           </li>
-          <li className="text-[28px] hover:text-red-700 flex items-center gap-2">
+          <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
             <FaCartShopping className="w-6 h-6" />
             <Link href="/">My Cart</Link>
           </li>
