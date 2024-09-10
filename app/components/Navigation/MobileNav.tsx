@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
-import { BiMenu } from "react-icons/bi";
+import { BiCycling, BiMenu, BiShoppingBag } from "react-icons/bi";
 import { BsShop } from "react-icons/bs";
-import { FaCartShopping, FaMicroblog } from "react-icons/fa6";
-import { GrContact, GrOrderedList } from "react-icons/gr";
+import { FaMicroblog } from "react-icons/fa6";
+import { GrContact } from "react-icons/gr";
 import { HiHome } from "react-icons/hi";
 import { ImCross } from "react-icons/im";
 
@@ -32,35 +32,45 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
         {/* nav links */}
         <ul className="space-y-4">
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <HiHome className="w-6 h-6" />
+            <HiHome className="w-4 h-4" />
             <Link href="/">Home</Link>
           </li>
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <BsShop className="w-6 h-6" />
+            <BsShop className="w-4 h-4" />
             <Link href="/">Shop</Link>
           </li>
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <BiMenu className="w-6 h-6" />
+            <BiMenu className="w-4 h-4" />
             <Link href="/">Menu</Link>
           </li>
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <FaMicroblog className="w-6 h-6" />
+            <FaMicroblog className="w-4 h-4" />
             <Link href="/">Blog</Link>
           </li>
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <GrContact className="w-6 h-6" />
+            <GrContact className="w-4 h-4" />
             <Link href="/">Contact</Link>
           </li>
           <li>
             <div className="border border-b-[0.5px] border-b-gray-300/30" />
           </li>
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <GrOrderedList className="w-6 h-6" />
+            <BiCycling className="w-4 h-4" />
             <Link href="/">Order By</Link>
           </li>
           <li className="text-[18px] hover:text-red-700 flex items-center gap-2">
-            <FaCartShopping className="w-6 h-6" />
+            <BiShoppingBag className="w-4 h-4" />
             <Link href="/">My Cart</Link>
+          </li>
+          <li>
+            <div className="border border-b-[0.5px] border-b-gray-300/30" />
+          </li>
+          <li
+            className="text-[18px] hover:text-red-700 flex items-center gap-2"
+            onClick={closeNav}
+          >
+            <ImCross className="w-4 h-4" />
+            <Link href="/">Close</Link>
           </li>
         </ul>
       </div>
