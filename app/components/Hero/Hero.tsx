@@ -39,91 +39,32 @@ const Hero = () => {
       centerMode={false}
     >
       {/* 1st hero slide */}
-      <div className="w-[100%] h-[80vh] flex items-center justify-center flex-col bg-blue-950 clip_path">
-        <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
-          {/* image */}
-          <Image src={BurgerImg1} alt="burger" />
-          {/* Information */}
+      <div className="w-full md:h-[88vh] h-[50vh] flex items-center justify-center bg-blue-950 md:clip_path">
+        <div className="w-[88%] h-[100%] grid grid-cols-2 items-center justify-center mx-auto">
+          {/* Image */}
+          <Image
+            src={BurgerImg1}
+            alt="burguer"
+            className="md:w-[600px] w-[150px] object-cover mx-auto"
+          />
+          {/* information */}
           <div className="">
-            <h1 className="text-[40px] font-semibold text-yellow-400">
+            <h1 className="md:text-[40px] text-[25px] font-semibold text-yellow-400 ">
               Fast Food Burger
             </h1>
-            <h1 className="text-[90px] text-white leading-[5rem] uppercase font-bold">
+            <h1 className="md:text-[90px] text-[40px] md:leading-[5rem] leading-[2.5rem] text-white font-bold uppercase">
               Best
               <br />
-              Burgers
+              Burger
             </h1>
-            <p className="text-white mt-[1rem] opacity-70 text-[18px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              provident consectetur unde quos, deserunt quo quae molestias
-              pariatur, animi quod assumenda accusantium sapiente architecto
-              est?
+            <p className="mt-[0.5rem] text-white opacity-70 text-[12px] md:text-[18px]">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              quidem hic ipsam consequuntur iusto earum fuga velit suscipit
+              atque dignissimos!
             </p>
-            <button className="px-8 py-3 text-[16px] bg-green-500 transition-all duration-200 hover:bg-green-700 flex items-center rounded-md space-x-2 text-white mt-[2rem]">
+            <button className="mt-[1rem] md:mt-[2rem] px-[15px] py-1 md:px-8 md:py-3  text-[12px] md:text-[16px] bg-green-500 transition-all duration-200 hover:bg-green-700 flex items-center rounded-md space-x-2 text-white">
               <span>
-                <BiCycling className="w-[1.7rem] h-[1.7rem]" />
-              </span>
-              <span className="font-bold">Order Now</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* 2st hero slide */}
-      <div className="w-[100%] h-[80vh] flex items-center justify-center flex-col bg-[#450a0a] clip_path">
-        <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
-          {/* image */}
-          <Image src={BurgerImg2} alt="burger" />
-          {/* Information */}
-          <div className="">
-            <h1 className="text-[40px] font-semibold text-yellow-400">
-              Tasty Burger
-            </h1>
-            <h1 className="text-[90px] text-white leading-[5rem] uppercase font-bold">
-              Top
-              <br />
-              Burgers
-            </h1>
-            <p className="text-white mt-[1rem] opacity-70 text-[18px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              provident consectetur unde quos, deserunt quo quae molestias
-              pariatur, animi quod assumenda accusantium sapiente architecto
-              est?
-            </p>
-            <button className="px-8 py-3 text-[16px] bg-blue-500 transition-all duration-200 hover:bg-blue-700 flex items-center rounded-md space-x-2 text-white mt-[2rem]">
-              <span>
-                <BiCycling className="w-[1.7rem] h-[1.7rem]" />
-              </span>
-              <span className="font-bold">Order Now</span>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* 2st hero slide */}
-      <div className="w-[100%] h-[80vh] flex items-center justify-center flex-col bg-[#148f43] clip_path">
-        <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
-          {/* image */}
-          <Image src={BurgerImg3} alt="burger" />
-          {/* Information */}
-          <div className="">
-            <h1 className="text-[40px] font-semibold text-yellow-400">
-              Traditional Burger
-            </h1>
-            <h1 className="text-[90px] text-white leading-[5rem] uppercase font-bold">
-              Delicius
-              <br />
-              Burgers
-            </h1>
-            <p className="text-white mt-[1rem] opacity-70 text-[18px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              provident consectetur unde quos, deserunt quo quae molestias
-              pariatur, animi quod assumenda accusantium sapiente architecto
-              est?
-            </p>
-            <button className="px-8 py-3 text-[16px] bg-orange-500 transition-all duration-200 hover:bg-orange-700 flex items-center rounded-md space-x-2 text-white mt-[2rem]">
-              <span>
-                <BiCycling className="w-[1.7rem] h-[1.7rem]" />
+                <BiCycling className="w-[1.3rem] h-[1.3rem] md:w-[1.7rem] md:h-[1.7rem]" />
               </span>
               <span className="font-bold">Order Now</span>
             </button>
