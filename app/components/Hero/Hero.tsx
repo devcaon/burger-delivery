@@ -2,8 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import BurgerImg1 from "@/public/images/b1.png";
-import BurgerImg2 from "@/public/images/b2.png";
-import BurgerImg3 from "@/public/images/b3.png";
+// import BurgerImg2 from "@/public/images/b2.png";
+// import BurgerImg3 from "@/public/images/b3.png";
 import Image from "next/image";
 import { BiCycling } from "react-icons/bi";
 
